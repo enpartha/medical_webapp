@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:medical_webapp/screen/Consultation.dart';
+import 'package:medical_webapp/screen/Health_portion.dart';
+import 'package:medical_webapp/screen/Self_checkbar.dart';
 import 'package:medical_webapp/screen/widgets/Featured.dart';
 import 'package:medical_webapp/screen/widgets/category.dart';
 import 'package:medical_webapp/screen/widgets/category_card.dart';
@@ -89,7 +91,8 @@ class _HomePageState extends State<HomePage> {
                   Category(),
                   Featured(),
                   Consult(),
-                  
+                  HealthPortion(),
+                  SelfCheck(),
         
           ],
               // alignment: Alignment.topCenter,
