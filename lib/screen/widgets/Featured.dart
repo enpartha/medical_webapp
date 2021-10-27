@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'FeaturedColumn.dart';
+
 class Featured extends StatelessWidget {
   const Featured({ Key? key }) : super(key: key);
 
@@ -101,84 +103,8 @@ class Featured extends StatelessWidget {
               SizedBox(width: 30,),
               Column(
                 children: [
-                  Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 23),
-                       alignment: Alignment.topCenter,
-                        height: 210,
-                        width: 550,
-                        decoration: BoxDecoration(
-                        color: Colors.white,
-                          borderRadius: BorderRadius.circular(30)
-                        ),
-                        
-
-                      ),
-                        Positioned(left: 25,
-                        top: 50,
-                          child: Text("Covid-19 Care",
-                           style: GoogleFonts.poppins(
-                           fontSize: 25,
-                           color: Colors.indigo,
-                           fontWeight: FontWeight.w600
-                         ),)),
-                        
-                        Positioned(left: 25,
-                        top: 90,
-                          child: Text("Consultations,\nRT-PCR Tests,\nTips & more",
-                           style: GoogleFonts.poppins(
-                           fontSize: 18,
-                           color: Colors.black,
-                           fontWeight: FontWeight.w700
-                         ),)),
-                         Positioned(
-                           child: Image.asset("assets/covid.png"),
-                           right: 0,
-                           bottom: -10,
-                          // top: -10,
-                           )
-                      
-                    ],
-                  ),
-                  Stack(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 25),
-                       alignment: Alignment.topCenter,
-                        height: 210,
-                        width: 550,
-                        decoration: BoxDecoration(
-                        color: Colors.white,
-                          borderRadius: BorderRadius.circular(30)
-                        ),
-                      ),
-                      Positioned(left: 25,
-                        top: 50,
-                          child: Text("Covid-19\nInflammation Test",
-                           style: GoogleFonts.poppins(
-                           fontSize: 25,
-                           color: Colors.indigo,
-                           fontWeight: FontWeight.w600
-                         ),)),
-                        
-                        Positioned(left: 25,
-                        top: 125,
-                          child: Text("CRP, D-Dimer\n&5 Five more Test",
-                           style: GoogleFonts.poppins(
-                           fontSize: 18,
-                           color: Colors.black,
-                           fontWeight: FontWeight.w700
-                         ),)),
-                         Positioned(
-                           child: Image.asset("assets/covid.png"),
-                           right: 0,
-                           bottom: -10,
-                          // top: -10,
-                           )
-                    ],
-                  )
+                  FeaturedColumn(),
+                  FeaturedColumn(),
 
                 ],
               )
@@ -190,3 +116,4 @@ class Featured extends StatelessWidget {
     );
   }
 }
+
