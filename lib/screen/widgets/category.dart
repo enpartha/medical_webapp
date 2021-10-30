@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medical_webapp/screen/widgets/CategoryBottom.dart';
 import 'package:medical_webapp/screen/widgets/CategoryTop.dart';
-import 'package:medical_webapp/screen/widgets/category_card.dart';
+// import 'package:medical_webapp/screen/widgets/category_card.dart';
 
 import 'CategoryMiddle.dart';
 
@@ -34,28 +34,45 @@ class Category extends StatelessWidget {
               SizedBox(height: 20),
               Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: CategoryTop(),
-                  ),
+                
+                    CategoryTop(
+                      // colour:Color(0xFFffdae0),
+                      title: "Consult\nDoctors Online",
+                       imgurl: 'assets/consult.png', 
+                       subtitle: '350 off on First Consultation',),
+                  
                   SizedBox(
                     width: 70,
                   ),
                   Padding(
-                      padding: const EdgeInsets.all(8.0), child: CategoryTop()),
+                      padding: const EdgeInsets.all(8.0), 
+                      child: CategoryTop(
+                      // colour: Color(0xFFffdae0), 
+                      title: 'Book\nLab Tests',
+                      imgurl: 'assets/consult.png',
+                      subtitle: '300 off on Second Consultation',)),
                 ],
               ),
               Row(
                 children: [
-                  CategoryMiddle(),
+                  CategoryMiddle(
+                    imgurl: 'assets/xray.png', 
+                    subtitle: 'Diabetes,Thyroid', 
+                    title: 'At-Home\nCare Plans',),
                   SizedBox(
                     width: 10,
                   ),
-                  CategoryMiddle(),
+                  CategoryMiddle(
+                    imgurl: 'assets/medicines.png',
+                     subtitle: 'Same day deliviey', 
+                     title: 'Order medicines',),
                   SizedBox(
                     width: 10,
                   ),
-                  CategoryMiddle(),
+                  CategoryMiddle(
+                    imgurl: 'assets/phone.png',
+                     subtitle: 'Know your risk level', 
+                     title: 'Start Self-check',),
                 ],
               ),
               SizedBox(

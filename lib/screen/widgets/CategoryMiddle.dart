@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CategoryMiddle extends StatelessWidget {
-  const CategoryMiddle({
-    Key? key,
-  }) : super(key: key);
+final String title;
+final String subtitle;
+final String imgurl;
+ final Color colour = Color(0xFFffdae0) ;
+
+CategoryMiddle({required this.title, required this.subtitle, required this.imgurl});
+
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +32,7 @@ class CategoryMiddle extends StatelessWidget {
                     
                       alignment: Alignment.topLeft,
                       child: Text(
-                        "At-Home\nCare Plans",
+                        "$title",
                         style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold,
                             fontSize: 23),
@@ -39,7 +43,7 @@ class CategoryMiddle extends StatelessWidget {
                   Container(
                       alignment: Alignment.topLeft,
                       child: Text(
-                        "Diabetes Thyroid and More",
+                        "$subtitle",
                         style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -52,7 +56,7 @@ class CategoryMiddle extends StatelessWidget {
         
           ),
       Positioned(
-        child: Image.asset("assets/xray.png"),
+        child: Image.asset("$imgurl"),
         height: 120,
         width: 120,
         left: 365,

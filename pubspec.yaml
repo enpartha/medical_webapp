@@ -60,6 +60,13 @@ flutter:
     - assets/covid.png
     - assets/first.png
     - assets/second.png
+    - assets/secondd.png
+    - assets/third.png
+    - assets/fourth.png
+    - assets/fifth.png
+    - assets/sixth.png
+    - assets/seventh.png
+    - assets/eight.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

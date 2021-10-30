@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CategoryTop extends StatelessWidget {
-  const CategoryTop({
-    Key? key,
-  }) : super(key: key);
+ final Color colour = Color(0xFFffdae0) ;
+ final String title;
+ final String imgurl;
+ final String subtitle;
+ CategoryTop({required this.title,required this.imgurl,required this.subtitle,});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,8 @@ class CategoryTop extends StatelessWidget {
           margin: EdgeInsets.only(left: 100),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: Color(0xFFffdae0),
+            color: colour,
+            // color: Color(0xFFffdae0),
           ),
         ),
         Positioned(
@@ -25,18 +28,19 @@ class CategoryTop extends StatelessWidget {
             width: 130,
             right: -2,
             top: -13,
-            child: Image.asset("assets/consult.png")),
+            child: Image.asset("$imgurl")),
+            
         Container(
-          margin: EdgeInsets.fromLTRB(150, 80, 0, 0),
+          margin: EdgeInsets.fromLTRB(150, 40, 0, 0),
           // color: Colors.indigo,
-          height: 100,
+          height: 140,
           width: 250,
           child: Column(
             children: [
               Container(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    "Consult\nDoctors Online",
+                    "$title",
                     style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                         fontSize: 20),
@@ -45,9 +49,14 @@ class CategoryTop extends StatelessWidget {
                 height: 5,
               ),
               Container(
+                // margin: EdgeInsets.only(b),
+                height: 55,
+                width: 300,
+                
+                // color:Colors.red,
                   alignment: Alignment.topLeft,
                   child: Text(
-                    "250 Off on 1st Consultion",
+                    "$subtitle",
                     style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,

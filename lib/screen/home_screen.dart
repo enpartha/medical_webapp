@@ -5,7 +5,7 @@ import 'package:medical_webapp/screen/Health_portion.dart';
 import 'package:medical_webapp/screen/Self_checkbar.dart';
 import 'package:medical_webapp/screen/widgets/Featured.dart';
 import 'package:medical_webapp/screen/widgets/category.dart';
-import 'package:medical_webapp/screen/widgets/category_card.dart';
+// import 'package:medical_webapp/screen/widgets/category_card.dart';
 import 'package:medical_webapp/screen/widgets/top_bar_contents.dart';
 import 'package:medical_webapp/screen_config.dart';
 
